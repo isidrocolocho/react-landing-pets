@@ -1,8 +1,8 @@
-const Banner = () => {
+const Banner = (props) => {
   return (
     <section className="flex flex-col justify-center items-center mt-50 md:mt-40 sm:mt-80 dark:text-white">
       <div className="flex flex-col justify-center items-center pt-8">
-        <h1 className="font-merriweather text-center text-2xl pb-4">A smarter pet pharmacy</h1>
+        <h1 className="font-merriweather text-center text-2xl pb-4">{props.title}</h1>
         <p className="font-medium text-center">HUMAN-GREAT QUALITY. WALLET-FRIENDLY PRICES.</p>
         <button className="py-1 px-2 text-sm text-white font-medium bg-indigos dark:bg-dark-indigos hover:bg-[#594eff] mt-2 mb-2">
           START YOUR PLAN

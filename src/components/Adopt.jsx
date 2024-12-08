@@ -1,11 +1,11 @@
 import React from "react";
-const Adopt = () => {
+const Adopt = (props) => {
     return (
         <section
             id="adopt"
             className="flex flex-col justify-center font-bold text-white items-center px-10 pt-12 h-full font-raleway"
         >
-            <h1 className="text-3xl text-black dark:text-white mb-3">Adopt Now</h1>
+            <h1 className="text-3xl text-black dark:text-white mb-3">{props.title}</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
                 <div className="flex flex-col justify-center items-center bg-yellows dark:bg-dark-yellows w-full p-5 mx-2 grid grid-cols-2">
                     <div className="flex flex-col items-start justify-start">

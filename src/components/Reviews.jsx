@@ -1,6 +1,6 @@
 import React from "react";
 
-const Reviews = () => {
+const Reviews = (props) => {
 
 
   return (
@@ -9,7 +9,7 @@ const Reviews = () => {
       className="flex flex-col items-center justify-center px-6 pb-12 w-full font-raleway"
     >
       <div className="w-full flex items-center justify-center mb-10">
-        <h1 className="text-3xl text-black font-bold">Reviews</h1>
+        <h1 className="text-3xl text-black font-bold">{props.title}</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
         <div className="w-full bg-yellows dark:bg-dark-yellows dark:text-white py-6 px-6 mb-2 rounded-lg shadow-md">

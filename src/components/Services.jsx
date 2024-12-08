@@ -1,6 +1,6 @@
 import React from "react";
 
-const Services = () => {
+const Services = (props) => {
 
   return (
     <section
@@ -8,7 +8,7 @@ const Services = () => {
       className="flex flex-col items-center pt-5 pb-4 px-10 mb-5 mt-5 font-raleway dark:text-white"
     >
       <div className="w-full flex items-center justify-center mb-4">
-        <h1 className="text-3xl text-black dark:text-white font-bold">Our Services</h1>
+        <h1 className="text-3xl text-black dark:text-white font-bold">{props.title}</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6 w-full p-5 col-span-2">
